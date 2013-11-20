@@ -90,7 +90,7 @@ URxvt*cursorColor2:       #151515
 
 
 ! rxvt-unicode --------------------------------------------------------------- 
-URxvt.font : xft:Tamsyn:pixelsize=16
+URxvt.font : xft:Consolas:pixelsize=16
 ! URxvt.font : xft:Profont:pixelsize=14
 URxvt.imLocale: de_DE.UTF-8
 URxvt.cursorUnderline: False
@@ -104,7 +104,7 @@ URxvt.scrollColor: #202020
 
 URxvt.saveLines: 32768
 URxvt.perl-ext-common: default,matcher,url-select
-URxvt.urlLauncher: luakit
+URxvt.urlLauncher: firefox 
 URxvt.underlineURLs: true
 URxvt.matcher.button: 3
 
@@ -122,3 +122,4 @@ URxvt.keysym.M-C-6:       command:\033]710;xft:Tamsyn:pixelsize=24\007
 URxvt.keysym.M-C-7:       command:\033]710;xft:Tamsyn:pixelsize=26\007
 URxvt.keysym.M-C-8:       command:\033]710;xft:Tamsyn:pixelsize=28\007
 URxvt.keysym.M-C-9:       command:\033]710;xft:Tamsyn:pixelsize=30\007
+
