@@ -1,14 +1,12 @@
 ! ----------------------------------------------------------------------------
 ! file:     ~/.Xresources
 ! author:   Philipp Schmitt - lxl.io
-! modified: November 2011
+! created:  November 2011
 ! vim:ft=xdefaults:
 ! ----------------------------------------------------------------------------
 
 ! Xcursor --------------------------------------------------------------------
-Xcursor.theme:Vanilla-DMZ
-!Xcursor.theme:PolarCursorTheme
-!Xcursor.size:12
+Xcursor.theme:Simple-and-Soft
 
 ! Xft settings ---------------------------------------------------------------
 Xft.dpi:        96
@@ -17,48 +15,10 @@ Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
-! terminal colors ------------------------------------------------------------
-!*background:       #202020
-!*foreground:       #C6B8CF
-!*foreground: #DDCCBB
-
-! Brown BG
-!*background: #30251D
-
-! Grey BG
-!*background: #151515
-!black
-!*color0:     #393939
-!*color8:     #AF875F
-!red
-!*color1:     #BF1E2D
-!*color9:     #E7212A
-!green
-!*color2:     #9DBA3A
-!*color10:    #A9C938
-!yellow
-!*color3:     #F5B915
-!*color11:    #F7D325
-!blue
-!*color4:     #1CA1DB
-!*color12:    #00AFDA
-!magenta
-!*color5:     #652F90
-!*color13:    #894E9F
-!cyan
-!*color6:     #EA7D24
-!*color14:    #F79321
-!white
-!*color7:     #E7E8E9
-!*color15:    #F3F3F4
-
-! vim: set filetype=xdefaults :
 *foreground: #D7D0C7
 *background: #151515
 
 !black
-! *color0:     #AF875F
-! *color8:     #AF875F
 *color0:     #101010
 *color8:     #404040
 !red
@@ -83,32 +43,27 @@ Xft.hintstyle:  hintslight
 *color7:     #dddddd
 *color15:    #dddddd
 
-URxvt*borderColor:        #151515
-URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #ff8939
-URxvt*cursorColor2:       #151515
-
-
 ! rxvt-unicode ---------------------------------------------------------------
 URxvt.font : xft:monaco:size=16
-!URxvt.font : xft:Profont:pixelsize=14
 URxvt.imLocale: en_US.UTF-8
 URxvt.cursorUnderline: False
-URxvt.cursorBlink: true
-URxvt.cursorColor: #118dc2
+
+URxvt.cursorBlink:  true
+URxvt.cursorColor:  #59676d
+URxvt.cursorColor2: #151515
+URxvt.borderColor:  #151515
+URxvt.colorBD:      #ffffff
 
 URxvt.scrollBar: false
-URxvt.scrollBar_floating: true
-URxvt.scrollBar_right: true
-URxvt.scrollColor: #202020
 
 URxvt.saveLines: 32768
+! -- Plugins -- !
 URxvt.perl-ext-common: default,matcher,url-select,font-size
 URxvt.url-launcher: firefox
 URxvt.underlineURLs: true
 URxvt.matcher.button: 3
 
-! --irssi-notification-- !
+! -- Notifications -- !
 URxvt.urgentOnBell: true
 URxvt.visualBell: false
 
