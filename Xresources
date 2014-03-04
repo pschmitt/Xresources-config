@@ -5,6 +5,9 @@
 ! vim:ft=xdefaults:
 ! ----------------------------------------------------------------------------
 
+! Colors ---------------------------------------------------------------------
+#include "Xresources-hybrid"
+
 ! Xcursor --------------------------------------------------------------------
 Xcursor.theme:Simple-and-Soft
 
@@ -14,34 +17,6 @@ Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
-
-*foreground: #D7D0C7
-*background: #151515
-
-!black
-*color0:     #101010
-*color8:     #404040
-!red
-*color1:     #E84F4F
-*color9:     #D23D3D
-!green
-*color2:     #B8D68C
-*color10:    #A0CF5D
-!yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
-!blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
-!magenta
-*color5:     #9B64FB
-*color13:    #8542FF
-!cyan
-*color6:     #6D878D
-*color14:    #42717B
-!white
-*color7:     #dddddd
-*color15:    #dddddd
 
 ! rxvt-unicode ---------------------------------------------------------------
 URxvt.font : xft:monaco:size=16
@@ -57,18 +32,28 @@ URxvt.colorBD:      #ffffff
 URxvt.scrollBar: false
 
 URxvt.saveLines: 32768
+
 ! -- Plugins -- !
-URxvt.perl-ext-common: default,matcher,url-select,font-size
+URxvt.perl-ext-common: default,clipboard,matcher,keyboard-select,url-select,font-size
+
+! -- url select -- !
 URxvt.url-launcher: firefox
 URxvt.underlineURLs: true
 URxvt.matcher.button: 3
+
+! -- clipboard -- !
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd: xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
 
 ! -- Notifications -- !
 URxvt.urgentOnBell: true
 URxvt.visualBell: false
 
 !-- Increase / decrease font size --!
- URxvt.keysym.C-Up:     perl:font-size:increase
- URxvt.keysym.C-Down:   perl:font-size:decrease
- URxvt.keysym.C-S-Up:   perl:font-size:incglobal
- URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
