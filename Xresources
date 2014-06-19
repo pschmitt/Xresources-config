@@ -19,7 +19,8 @@ Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
 ! rxvt-unicode ---------------------------------------------------------------
-URxvt.font : xft:monaco:size=16
+URxvt*font: xft:Source Code Pro:style=Regular:pixelsize=20:antialias=true:hinting=slight
+URxvt*boldFont: ft:Source Code Pro:style=Regular:pixelsize=20:antialias=true:hinting=slight
 URxvt.imLocale: en_US.UTF-8
 URxvt.cursorUnderline: False
 
